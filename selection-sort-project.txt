@@ -1,0 +1,41 @@
+22,27,16,2,18,6] -> Selection Sort
+
+1) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+1.adım: (n kadar tarama yaptım)
+[2 22 27 16 18 6]
+
+2.adım: (n-1 kadar tarama yaptım)
+[2 6 22 27 16 18]
+
+3.adım: (n-2 kadar tarama yaptım)
+[2 6 16 22 27 18]
+
+4.adım: (n-3 kadar tarana yaptım)
+[2 6 16 18 22 27]
+
+Big-O gösterimini yazınız..
+
+>Aslında "n" eleman sayısı kadar taramayla başlayıp her adımda bir demir sabit sayımı artığım için
+işlem sayım her adımda bir azaldı. Bunun anlamı ise n den 1 e kadar işlem uzunluğuna sahip olduğum.
+1 den "n"e kadar olan sayıların toplamı  n.(n + 1) / 2 buradan dominant "n^2" Big-O-notation değerimiz oluyor.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız..
+
+>Arrayimizi ordera soktuktan sonra bizden 18 sayısına ulaşmamız isteniyor. 18 sayısına ulaşmak için gerçekleştirmem
+gereken adım sayısı "n/2"dir ve "avarage case"e girmektedir. Eğer 27 elemanını arıyor olsaydım, ulaşmal için
+gerçekleştirmem gereken işlem sayısı "n" eleman sayımız kadar olacaktı ve busa en kötü senaryo yani Worst case.
+
+[7 3 5 8 2 9 4 15 6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+1.adım:
+[2 7 3 5 8 9 4 15 6]
+
+2.adım:
+[2 3 7 5 8 9 4 15 6]
+
+3.adım:
+[2 3 4 7 5 8 9 15 6]
+
+4.adım:
+[2 3 4 5 7 8 9 15 6]
